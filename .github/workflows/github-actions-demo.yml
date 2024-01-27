@@ -5,7 +5,9 @@ on:
   push:
     branches: ['main']
   repository_dispatch:
+    branches: [ "main" ]
     types: [update-posts]
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
