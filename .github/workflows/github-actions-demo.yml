@@ -13,9 +13,12 @@ jobs:
           node-version: 18.x
 
       - name: Install NPM packages
-        run: npm install
+        run: npm ci
 
       - name: Build Next.js App
         run: npm run build
+
+      - name: Export Next.js App
+        run: npm run export
 
       - run: echo "first github actions demo"
