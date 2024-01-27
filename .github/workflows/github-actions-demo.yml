@@ -34,6 +34,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
-          
-          server-dir: /home/xs894317/andrew0826.com/public_html/test-wings
+
+          server-dir: /home/xs894317/andrew0826.com/public_html/test-wings/
           protocol: ftps
