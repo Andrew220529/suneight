@@ -2,7 +2,7 @@ import { cmsClient } from "@/lib/microcms"
 
 const Article = ({data}) => {
     return (
-        <div dangerouslySetInnerHTML={{ __html: data.body }} />
+        <div dangerouslySetInnerHTML={{ __html: data?.body }} />
     )
 }
 
