@@ -21,4 +21,8 @@ jobs:
       - name: Export Next.js App
         run: npm run export
 
-      - run: echo "first github actions demo"
+      - name: Archive output directory
+        uses: actions/upload-artifact@v2
+        with:
+          name: out
+          path: out
